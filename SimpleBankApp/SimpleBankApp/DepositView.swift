@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct DepositView: View {
+    @State private var showingConfirmationAlert = false
+    @State private var showingResultAlert = false
+    
     @State private var depositSum = 0.0
     @State private var depositTerm = 12
     @State private var depositPercentage = 20
@@ -78,6 +81,23 @@ struct DepositView: View {
                     }
                 }
             }
+            
+            Button("Разместить депозит") {
+                showingConfirmationAlert = true
+            }
+                .buttonStyle(.borderedProminent)
+        }
+        .alert("Разместить депозит", isPresented: $showingConfirmationAlert) {
+            Button("OK") { showingResultAlert = true }
+            Button("Cancel", role: .cancel) { }
+        } message: {
+            Text("Пожалуйста подтвердите размещение депозита")
+        }
+        
+        .alert("Депозит успешно размещен", isPresented: $showingResultAlert) {
+            Button("OK") { }
+        } message: {
+            Text("")
         }
     }
 }

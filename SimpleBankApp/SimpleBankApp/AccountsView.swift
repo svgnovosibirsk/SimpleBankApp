@@ -93,14 +93,40 @@ struct AccountsView: View {
             }
             .padding(20)
             
-            // MARK: List of actions
+            // MARK: Deposits view
             
-            Form {
+            ZStack{
+                Color(.blue)
+                    .frame(width: 350, height: 100)
+                    .cornerRadius(20)
+                
                 NavigationLink() {
                     DepositView()
                 } label: {
                     HStack {
                         Image(systemName: "percent")
+                            .foregroundColor(.white)
+                            .frame(width: 50, height: 50)
+                            .clipShape(Capsule())
+                            .overlay(
+                                Capsule()
+                                    .strokeBorder(.white, lineWidth: 1)
+                            )
+                        Text("Депозиты")
+                            .foregroundColor(.white)
+                            .padding(10)
+                    }
+                }
+            }
+            
+            // MARK: List of actions
+            
+            Form {
+                NavigationLink() {
+                    AccountsListView()
+                } label: {
+                    HStack {
+                        Image(systemName: "dollarsign")
                             .foregroundColor(.blue)
                             .frame(width: 50, height: 50)
                             .clipShape(Capsule())
@@ -108,7 +134,7 @@ struct AccountsView: View {
                                 Capsule()
                                     .strokeBorder(.blue, lineWidth: 1)
                             )
-                        Text("Дерпозиты")
+                        Text("Счета")
                             .padding(10)
                     }
                 }

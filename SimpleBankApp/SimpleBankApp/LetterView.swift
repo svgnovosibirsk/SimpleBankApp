@@ -13,7 +13,7 @@ struct LetterView: View {
     var body: some View {
         NavigationStack {
             List(lettersStorage.letters) { letter in
-                VStack {
+                VStack(alignment: .leading, spacing: 10) {
                     Text(letter.title)
                         .font(letter.isRead ? .title2 : .title)
                         .foregroundColor(letter.isRead ? .gray : .black)
