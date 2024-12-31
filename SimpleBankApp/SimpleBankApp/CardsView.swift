@@ -18,14 +18,19 @@ struct CardsView: View {
                     .frame(width: 300, height: 200)
                     .clipShape(Rectangle())
                     .cornerRadius(10)
-
-                HStack{
-                    Text("СОВКОМ")
-                        .font(.largeTitle)
-                        .foregroundColor(.red)
-                    Text("БАНК")
-                        .font(.largeTitle)
-                        .foregroundColor(.blue)
+                
+                VStack{
+                    HStack{
+                        Text("СОВКОМ")
+                            .font(.largeTitle)
+                            .foregroundColor(.red)
+                        Text("БАНК")
+                            .font(.largeTitle)
+                            .foregroundColor(.blue)
+                    }
+                    
+                    Text("1234 4321 1234 4321")
+                        .padding(5)
                 }
             }
             .offset(dragAmount)
@@ -42,8 +47,6 @@ struct CardsView: View {
             Spacer()
             Spacer()
         }
-        
-      
     }
 }
 

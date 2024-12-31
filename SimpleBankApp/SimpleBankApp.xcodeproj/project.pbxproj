@@ -15,6 +15,13 @@
 		7C33144F2D2122A600BEAF41 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33144E2D2122A600BEAF41 /* CardsView.swift */; };
 		7C3314512D2122D700BEAF41 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3314502D2122D700BEAF41 /* ContactsView.swift */; };
 		7C3314532D21231300BEAF41 /* BranchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3314522D21231300BEAF41 /* BranchesView.swift */; };
+		7C96767C2D238ACF00F5A8E7 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96767B2D238ACF00F5A8E7 /* Account.swift */; };
+		7C96767E2D238B5600F5A8E7 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96767D2D238B5600F5A8E7 /* AccountView.swift */; };
+		7C9676802D238F8B00F5A8E7 /* AccountsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96767F2D238F8B00F5A8E7 /* AccountsStorage.swift */; };
+		7C9676822D239B2200F5A8E7 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676812D239B2200F5A8E7 /* Letter.swift */; };
+		7C9676842D239BE200F5A8E7 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676832D239BE200F5A8E7 /* LetterView.swift */; };
+		7C9676862D239DDB00F5A8E7 /* LettersStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676852D239DDB00F5A8E7 /* LettersStorage.swift */; };
+		7C9676882D23A45100F5A8E7 /* DepositView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676872D23A45100F5A8E7 /* DepositView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,13 @@
 		7C33144E2D2122A600BEAF41 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		7C3314502D2122D700BEAF41 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		7C3314522D21231300BEAF41 /* BranchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesView.swift; sourceTree = "<group>"; };
+		7C96767B2D238ACF00F5A8E7 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		7C96767D2D238B5600F5A8E7 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		7C96767F2D238F8B00F5A8E7 /* AccountsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsStorage.swift; sourceTree = "<group>"; };
+		7C9676812D239B2200F5A8E7 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		7C9676832D239BE200F5A8E7 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		7C9676852D239DDB00F5A8E7 /* LettersStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersStorage.swift; sourceTree = "<group>"; };
+		7C9676872D23A45100F5A8E7 /* DepositView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +79,13 @@
 				7C33144E2D2122A600BEAF41 /* CardsView.swift */,
 				7C3314502D2122D700BEAF41 /* ContactsView.swift */,
 				7C3314522D21231300BEAF41 /* BranchesView.swift */,
+				7C96767D2D238B5600F5A8E7 /* AccountView.swift */,
+				7C9676832D239BE200F5A8E7 /* LetterView.swift */,
+				7C9676872D23A45100F5A8E7 /* DepositView.swift */,
+				7C96767B2D238ACF00F5A8E7 /* Account.swift */,
+				7C9676812D239B2200F5A8E7 /* Letter.swift */,
+				7C96767F2D238F8B00F5A8E7 /* AccountsStorage.swift */,
+				7C9676852D239DDB00F5A8E7 /* LettersStorage.swift */,
 				7C3314422D21206500BEAF41 /* Assets.xcassets */,
 				7C3314442D21206500BEAF41 /* Preview Content */,
 			);
@@ -153,8 +174,15 @@
 				7C33143F2D21206300BEAF41 /* SimpleBankAppApp.swift in Sources */,
 				7C3314532D21231300BEAF41 /* BranchesView.swift in Sources */,
 				7C33144F2D2122A600BEAF41 /* CardsView.swift in Sources */,
+				7C9676882D23A45100F5A8E7 /* DepositView.swift in Sources */,
+				7C96767E2D238B5600F5A8E7 /* AccountView.swift in Sources */,
+				7C9676802D238F8B00F5A8E7 /* AccountsStorage.swift in Sources */,
 				7C3314512D2122D700BEAF41 /* ContactsView.swift in Sources */,
+				7C9676822D239B2200F5A8E7 /* Letter.swift in Sources */,
 				7C33144D2D21227D00BEAF41 /* AccountsView.swift in Sources */,
+				7C9676842D239BE200F5A8E7 /* LetterView.swift in Sources */,
+				7C96767C2D238ACF00F5A8E7 /* Account.swift in Sources */,
+				7C9676862D239DDB00F5A8E7 /* LettersStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
