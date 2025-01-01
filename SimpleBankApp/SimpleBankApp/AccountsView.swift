@@ -139,6 +139,23 @@ struct AccountsView: View {
                     }
                 }
                 
+                NavigationLink() {
+                    CreatePaymentView()
+                } label: {
+                    HStack {
+                        Image(systemName: "creditcard")
+                            .foregroundColor(.blue)
+                            .frame(width: 50, height: 50)
+                            .clipShape(Capsule())
+                            .overlay(
+                                Capsule()
+                                    .strokeBorder(.blue, lineWidth: 1)
+                            )
+                        Text("Платежи")
+                            .padding(10)
+                    }
+                }
+                
             
                 .navigationTitle("Счета")
                 .navigationBarTitleDisplayMode(.inline)

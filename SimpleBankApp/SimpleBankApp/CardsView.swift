@@ -16,6 +16,8 @@ struct CardsView: View {
         VStack {
             Spacer()
             
+            // MARK: Card
+            
             ZStack{
                 LinearGradient(colors: [.blue, .red], startPoint: .topLeading, endPoint: .bottomTrailing)
                     .frame(width: 300, height: 200)
@@ -31,11 +33,9 @@ struct CardsView: View {
                             .font(.largeTitle)
                             .foregroundColor(.blue)
                     }
-                    
-                    Text("1234 4321 1234 4321")
-                        .padding(5)
                 }
             }
+            .cardNumbered(with: "1234 4321 1234 4321")
             .offset(dragAmount)
             .gesture(
                 DragGesture()
@@ -49,19 +49,21 @@ struct CardsView: View {
             
             Spacer()
             
+            // MARK: Order form
+            
             VStack {
-                Picker("Месяцы", selection: $card.type) {
+                Picker("Тип карты", selection: $card.type) {
                     ForEach(Card.types, id: \.self) {
                         Text("\($0)")
                     }
                 }
                 .pickerStyle(.inline)
                 
-                TextField("Enter your name", text: $card.name)
+                TextField("Имя", text: $card.name)
                     .padding(10)
-                TextField("Enter your last name", text: $card.lastName)
+                TextField("Фамилия", text: $card.lastName)
                     .padding(10)
-                TextField("Enter your address", text: $card.adress)
+                TextField("Адрес", text: $card.adress)
                     .padding(10)
             }
 

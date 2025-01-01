@@ -24,6 +24,8 @@
 		7C9676882D23A45100F5A8E7 /* DepositView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676872D23A45100F5A8E7 /* DepositView.swift */; };
 		7C96768A2D23B19200F5A8E7 /* AccountsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676892D23B19200F5A8E7 /* AccountsListView.swift */; };
 		7C96768C2D23BC2F00F5A8E7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768B2D23BC2F00F5A8E7 /* Card.swift */; };
+		7C96768E2D24EC4800F5A8E7 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768D2D24EC4800F5A8E7 /* ViewModifiers.swift */; };
+		7C9676902D24F5C900F5A8E7 /* CreatePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		7C9676872D23A45100F5A8E7 /* DepositView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositView.swift; sourceTree = "<group>"; };
 		7C9676892D23B19200F5A8E7 /* AccountsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListView.swift; sourceTree = "<group>"; };
 		7C96768B2D23BC2F00F5A8E7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7C96768D2D24EC4800F5A8E7 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePaymentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +91,13 @@
 				7C9676892D23B19200F5A8E7 /* AccountsListView.swift */,
 				7C9676832D239BE200F5A8E7 /* LetterView.swift */,
 				7C9676872D23A45100F5A8E7 /* DepositView.swift */,
+				7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */,
 				7C96767B2D238ACF00F5A8E7 /* Account.swift */,
 				7C9676812D239B2200F5A8E7 /* Letter.swift */,
 				7C96768B2D23BC2F00F5A8E7 /* Card.swift */,
 				7C96767F2D238F8B00F5A8E7 /* AccountsStorage.swift */,
 				7C9676852D239DDB00F5A8E7 /* LettersStorage.swift */,
+				7C96768D2D24EC4800F5A8E7 /* ViewModifiers.swift */,
 				7C3314422D21206500BEAF41 /* Assets.xcassets */,
 				7C3314442D21206500BEAF41 /* Preview Content */,
 			);
@@ -182,11 +188,13 @@
 				7C33144F2D2122A600BEAF41 /* CardsView.swift in Sources */,
 				7C96768A2D23B19200F5A8E7 /* AccountsListView.swift in Sources */,
 				7C9676882D23A45100F5A8E7 /* DepositView.swift in Sources */,
+				7C9676902D24F5C900F5A8E7 /* CreatePaymentView.swift in Sources */,
 				7C96767E2D238B5600F5A8E7 /* AccountView.swift in Sources */,
 				7C96768C2D23BC2F00F5A8E7 /* Card.swift in Sources */,
 				7C9676802D238F8B00F5A8E7 /* AccountsStorage.swift in Sources */,
 				7C3314512D2122D700BEAF41 /* ContactsView.swift in Sources */,
 				7C9676822D239B2200F5A8E7 /* Letter.swift in Sources */,
+				7C96768E2D24EC4800F5A8E7 /* ViewModifiers.swift in Sources */,
 				7C33144D2D21227D00BEAF41 /* AccountsView.swift in Sources */,
 				7C9676842D239BE200F5A8E7 /* LetterView.swift in Sources */,
 				7C96767C2D238ACF00F5A8E7 /* Account.swift in Sources */,

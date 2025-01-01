@@ -85,7 +85,7 @@ struct DepositView: View {
             Button("Разместить депозит") {
                 showingConfirmationAlert = true
             }
-                .buttonStyle(.borderedProminent)
+            .roundedBlueStyle()
         }
         .alert("Разместить депозит", isPresented: $showingConfirmationAlert) {
             Button("OK") { showingResultAlert = true }
