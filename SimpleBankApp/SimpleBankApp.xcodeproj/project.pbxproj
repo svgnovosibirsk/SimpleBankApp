@@ -26,6 +26,7 @@
 		7C96768C2D23BC2F00F5A8E7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768B2D23BC2F00F5A8E7 /* Card.swift */; };
 		7C96768E2D24EC4800F5A8E7 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768D2D24EC4800F5A8E7 /* ViewModifiers.swift */; };
 		7C9676902D24F5C900F5A8E7 /* CreatePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */; };
+		7C9676922D25102400F5A8E7 /* CreateLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676912D25102400F5A8E7 /* CreateLetterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		7C96768B2D23BC2F00F5A8E7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		7C96768D2D24EC4800F5A8E7 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePaymentView.swift; sourceTree = "<group>"; };
+		7C9676912D25102400F5A8E7 /* CreateLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLetterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				7C9676832D239BE200F5A8E7 /* LetterView.swift */,
 				7C9676872D23A45100F5A8E7 /* DepositView.swift */,
 				7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */,
+				7C9676912D25102400F5A8E7 /* CreateLetterView.swift */,
 				7C96767B2D238ACF00F5A8E7 /* Account.swift */,
 				7C9676812D239B2200F5A8E7 /* Letter.swift */,
 				7C96768B2D23BC2F00F5A8E7 /* Card.swift */,
@@ -186,6 +189,7 @@
 				7C33143F2D21206300BEAF41 /* SimpleBankAppApp.swift in Sources */,
 				7C3314532D21231300BEAF41 /* BranchesView.swift in Sources */,
 				7C33144F2D2122A600BEAF41 /* CardsView.swift in Sources */,
+				7C9676922D25102400F5A8E7 /* CreateLetterView.swift in Sources */,
 				7C96768A2D23B19200F5A8E7 /* AccountsListView.swift in Sources */,
 				7C9676882D23A45100F5A8E7 /* DepositView.swift in Sources */,
 				7C9676902D24F5C900F5A8E7 /* CreatePaymentView.swift in Sources */,
