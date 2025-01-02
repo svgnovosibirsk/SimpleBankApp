@@ -27,6 +27,8 @@
 		7C96768E2D24EC4800F5A8E7 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768D2D24EC4800F5A8E7 /* ViewModifiers.swift */; };
 		7C9676902D24F5C900F5A8E7 /* CreatePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */; };
 		7C9676922D25102400F5A8E7 /* CreateLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676912D25102400F5A8E7 /* CreateLetterView.swift */; };
+		7C9676942D26450000F5A8E7 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676932D26450000F5A8E7 /* QRCodeView.swift */; };
+		7C9676972D264F6B00F5A8E7 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9676962D264F6B00F5A8E7 /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,7 @@
 		7C96768D2D24EC4800F5A8E7 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePaymentView.swift; sourceTree = "<group>"; };
 		7C9676912D25102400F5A8E7 /* CreateLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLetterView.swift; sourceTree = "<group>"; };
+		7C9676932D26450000F5A8E7 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9676972D264F6B00F5A8E7 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +99,7 @@
 				7C9676872D23A45100F5A8E7 /* DepositView.swift */,
 				7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */,
 				7C9676912D25102400F5A8E7 /* CreateLetterView.swift */,
+				7C9676932D26450000F5A8E7 /* QRCodeView.swift */,
 				7C96767B2D238ACF00F5A8E7 /* Account.swift */,
 				7C9676812D239B2200F5A8E7 /* Letter.swift */,
 				7C96768B2D23BC2F00F5A8E7 /* Card.swift */,
@@ -131,6 +136,9 @@
 			dependencies = (
 			);
 			name = SimpleBankApp;
+			packageProductDependencies = (
+				7C9676962D264F6B00F5A8E7 /* CodeScanner */,
+			);
 			productName = SimpleBankApp;
 			productReference = 7C33143B2D21206300BEAF41 /* SimpleBankApp.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 7C3314322D21206300BEAF41;
+			packageReferences = (
+				7C9676952D264F6B00F5A8E7 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 7C33143C2D21206300BEAF41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,6 +205,7 @@
 				7C9676882D23A45100F5A8E7 /* DepositView.swift in Sources */,
 				7C9676902D24F5C900F5A8E7 /* CreatePaymentView.swift in Sources */,
 				7C96767E2D238B5600F5A8E7 /* AccountView.swift in Sources */,
+				7C9676942D26450000F5A8E7 /* QRCodeView.swift in Sources */,
 				7C96768C2D23BC2F00F5A8E7 /* Card.swift in Sources */,
 				7C9676802D238F8B00F5A8E7 /* AccountsStorage.swift in Sources */,
 				7C3314512D2122D700BEAF41 /* ContactsView.swift in Sources */,
@@ -334,11 +346,12 @@
 				DEVELOPMENT_TEAM = Y395B6BXRW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,11 +376,12 @@
 				DEVELOPMENT_TEAM = Y395B6BXRW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,6 +417,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C9676952D264F6B00F5A8E7 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C9676962D264F6B00F5A8E7 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9676952D264F6B00F5A8E7 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C3314332D21206300BEAF41 /* Project object */;
 }

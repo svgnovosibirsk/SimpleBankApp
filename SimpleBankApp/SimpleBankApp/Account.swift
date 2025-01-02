@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Account: Codable, Identifiable {
+struct Account: Codable, Identifiable, Hashable {
     let id: String
     let corAccount: String
     let kpp: String

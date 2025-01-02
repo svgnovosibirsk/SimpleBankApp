@@ -63,6 +63,7 @@ struct ContactsView: View {
                 .padding(20)
                 .sheet(isPresented: $showingSheet) {
                     CcreateLetterView()
+                        .presentationDetents([.medium, .large])
                 }
                 
                 Button("Посетить сайт") {

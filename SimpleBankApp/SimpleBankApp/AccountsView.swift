@@ -12,6 +12,9 @@ struct AccountsView: View {
     
     @State private var animationAmount = 1.0
     
+    // @AppStorage("appLounchCount") private var appLounchCount = 0
+    // TODO: Implement onAppear cout += 1 if count.isMultipleOf(2) -> Request appstore review
+    
     var body: some View {
         NavigationStack {
             
@@ -152,6 +155,23 @@ struct AccountsView: View {
                                     .strokeBorder(.blue, lineWidth: 1)
                             )
                         Text("Платежи")
+                            .padding(10)
+                    }
+                }
+                
+                NavigationLink() {
+                    QRCodeView()
+                } label: {
+                    HStack {
+                        Image(systemName: "qrcode")
+                            .foregroundColor(.blue)
+                            .frame(width: 50, height: 50)
+                            .clipShape(Capsule())
+                            .overlay(
+                                Capsule()
+                                    .strokeBorder(.blue, lineWidth: 1)
+                            )
+                        Text("Продажи по QR")
                             .padding(10)
                     }
                 }

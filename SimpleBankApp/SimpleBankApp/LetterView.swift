@@ -10,10 +10,20 @@ import SwiftUI
 struct LetterView: View {
     @StateObject var lettersStorage = LettersStorage()
     
+    @State private var searchText = ""
+    
+    var filteredLetters: [Letter] {
+        if searchText.isEmpty {
+            return lettersStorage.letters
+        } else {
+            return  lettersStorage.letters.filter { $0.title.localizedStandardContains(searchText) ||  $0.text.localizedStandardContains(searchText) }
+        }
+    }
+    
     var body: some View {
         NavigationStack {
             List {
-                ForEach(lettersStorage.letters) { letter in
+                ForEach(filteredLetters) { letter in
                     VStack(alignment: .leading, spacing: 10) {
                         Text(letter.title)
                             .font(letter.isRead ? .title2 : .title)
@@ -25,6 +35,7 @@ struct LetterView: View {
                 }
                 .onDelete(perform: removeLetters)
             }
+            .searchable(text: $searchText, prompt: "Найти письмо")
             
             Button("Добавить тестовое письмо") {
                 let titles = ["Срочно", "Перевод", "Платежи"]
