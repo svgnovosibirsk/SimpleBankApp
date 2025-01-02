@@ -6,15 +6,17 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct AccountsView: View {
+    @Environment(\.requestReview) var requestReview
+    
     @StateObject var accountsStorage = AccountsStorage()
     
     @State private var animationAmount = 1.0
     
-    // @AppStorage("appLounchCount") private var appLounchCount = 0
-    // TODO: Implement onAppear cout += 1 if count.isMultipleOf(2) -> Request appstore review
-    
+    @AppStorage("appLounchCount") private var appLounchCount = 0
+
     var body: some View {
         NavigationStack {
             
@@ -91,8 +93,6 @@ struct AccountsView: View {
                         }
                     }
                 }
-               
-                
             }
             .padding(20)
             
@@ -177,11 +177,23 @@ struct AccountsView: View {
                 }
                 
             
+                .onAppear(perform: incrementAppLounchCounter)
                 .navigationTitle("Счета")
                 .navigationBarTitleDisplayMode(.inline)
             }
             
         }
+    }
+    
+    func incrementAppLounchCounter() {
+        appLounchCount += 1
+        if appLounchCount.isMultiple(of: 3) {
+            askForReview()
+        }
+    }
+    
+    func askForReview() {
+        requestReview()
     }
 }
 

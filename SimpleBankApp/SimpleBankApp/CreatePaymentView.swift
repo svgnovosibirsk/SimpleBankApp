@@ -15,6 +15,10 @@ struct CreatePaymentView: View {
     @State private var recepient = ""
     @State private var inn = ""
     @State private var kpp = ""
+    
+    var disableButton: Bool {
+        sum == 0 || recepient.isEmpty || inn.isEmpty || kpp.isEmpty
+    }
         
     var body: some View {
         NavigationStack {
@@ -61,7 +65,7 @@ struct CreatePaymentView: View {
                 showingAlert = true
             }
             .roundedBlueStyle()
-            .disabled(!isEnabled())
+            .disabled(disableButton)
             .alert("Платеж успешно отправлен", isPresented: $showingAlert) {
                 Button("OK") { }
             } message: {
@@ -69,11 +73,8 @@ struct CreatePaymentView: View {
             }
             
            .navigationTitle("Создать платеж")
+           .toolbarBackground(.blue, for: .navigationBar)
         }
-    }
-    
-    func isEnabled() -> Bool {
-        sum != 0 && !recepient.isEmpty && !inn.isEmpty && !kpp.isEmpty
     }
 }
 
