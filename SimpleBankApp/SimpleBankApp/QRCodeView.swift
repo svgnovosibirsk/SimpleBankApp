@@ -37,11 +37,19 @@ struct QRCodeView: View {
                         .font(.title)
                 }
                 
-                Image(uiImage: generateQRCode(from: "\(item)\n \(price)\n\(account)"))
+               Image(uiImage: generateQRCode(from: "\(item)\n \(price)\n\(account)"))
                     .interpolation(.none)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 200)
+                    .contextMenu {
+                           let image = generateQRCode(from: "\(item)\n \(price)\n\(account)")
+
+                           ShareLink(item: Image(uiImage: image), preview: SharePreview("QR Code", image: Image(uiImage: image)))
+                       }
+                
+                Text("Нажмите и удерживайте чтобы поделиться")
+                
             }
             .navigationTitle("Заполните поля")
             .toolbar {
