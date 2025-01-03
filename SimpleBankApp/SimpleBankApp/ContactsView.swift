@@ -62,7 +62,7 @@ struct ContactsView: View {
                 .buttonStyle(.borderedProminent)
                 .padding(20)
                 .sheet(isPresented: $showingSheet) {
-                    CcreateLetterView()
+                    CreateLetterView()
                         .presentationDetents([.medium, .large])
                 }
                 

@@ -10,6 +10,7 @@ import SwiftUI
 struct CreatePaymentView: View {
     @FocusState private var isFocused: Bool
     @State private var showingAlert = false
+    @State private var showingDialog = false
     
     @State private var sum = 0.0
     @State private var recepient = ""
@@ -62,7 +63,7 @@ struct CreatePaymentView: View {
             }
             
             Button("Создать платеж") {
-                showingAlert = true
+                showingDialog = true
             }
             .roundedBlueStyle()
             .disabled(disableButton)
@@ -70,6 +71,12 @@ struct CreatePaymentView: View {
                 Button("OK") { }
             } message: {
                 Text("")
+            }
+            .confirmationDialog("Платеж", isPresented: $showingDialog) {
+                Button("Создать") { showingAlert = true }
+                Button("Отменить", role: .cancel) { }
+            } message: {
+                Text("Подтвердите создание платежа")
             }
             
            .navigationTitle("Создать платеж")

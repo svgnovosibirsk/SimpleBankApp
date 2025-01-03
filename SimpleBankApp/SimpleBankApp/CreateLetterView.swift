@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CcreateLetterView: View {
+struct CreateLetterView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var title: String = ""
