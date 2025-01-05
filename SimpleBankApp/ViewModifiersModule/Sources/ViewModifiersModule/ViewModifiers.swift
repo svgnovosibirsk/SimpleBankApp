@@ -9,8 +9,9 @@ import SwiftUI
 
 // MARK: RoundedBlue
 
-struct RoundedBlue: ViewModifier {
-    func body(content: Content) -> some View {
+@available(iOS 15.0, *)
+public struct RoundedBlue: ViewModifier {
+    public func body(content: Content) -> some View {
         content
             .font(.title3)
             .foregroundStyle(.white)
@@ -21,7 +22,8 @@ struct RoundedBlue: ViewModifier {
     }
 }
 
-extension View {
+@available(iOS 15.0, *)
+public extension View {
     func roundedBlueStyle() -> some View {
         modifier(RoundedBlue())
     }
@@ -30,10 +32,11 @@ extension View {
 
 // MARK: CardNumbered
 
-struct CardNumber: ViewModifier {
+@available(iOS 15.0, *)
+public struct CardNumber: ViewModifier {
     var text: String
 
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         ZStack(alignment: .bottom) {
             content
             Text(text)
@@ -44,7 +47,8 @@ struct CardNumber: ViewModifier {
     }
 }
 
-extension View {
+@available(iOS 15.0, *)
+public extension View {
     func cardNumbered(with text: String) -> some View {
         modifier(CardNumber(text: text))
     }

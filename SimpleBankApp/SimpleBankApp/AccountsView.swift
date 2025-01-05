@@ -187,7 +187,7 @@ struct AccountsView: View {
     
     func incrementAppLounchCounter() {
         appLounchCount += 1
-        if appLounchCount.isMultiple(of: 3) {
+        if appLounchCount.isMultiple(of: 7) {
             askForReview()
         }
     }

@@ -15,6 +15,7 @@
 		7C33144F2D2122A600BEAF41 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C33144E2D2122A600BEAF41 /* CardsView.swift */; };
 		7C3314512D2122D700BEAF41 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3314502D2122D700BEAF41 /* ContactsView.swift */; };
 		7C3314532D21231300BEAF41 /* BranchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3314522D21231300BEAF41 /* BranchesView.swift */; };
+		7C7ADC3A2D2A2DC60083520A /* ViewModifiersModule in Frameworks */ = {isa = PBXBuildFile; productRef = 7C7ADC392D2A2DC60083520A /* ViewModifiersModule */; };
 		7C96767C2D238ACF00F5A8E7 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96767B2D238ACF00F5A8E7 /* Account.swift */; };
 		7C96767E2D238B5600F5A8E7 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96767D2D238B5600F5A8E7 /* AccountView.swift */; };
 		7C9676802D238F8B00F5A8E7 /* AccountsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96767F2D238F8B00F5A8E7 /* AccountsStorage.swift */; };
@@ -24,7 +25,6 @@
 		7C9676882D23A45100F5A8E7 /* DepositView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676872D23A45100F5A8E7 /* DepositView.swift */; };
 		7C96768A2D23B19200F5A8E7 /* AccountsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676892D23B19200F5A8E7 /* AccountsListView.swift */; };
 		7C96768C2D23BC2F00F5A8E7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768B2D23BC2F00F5A8E7 /* Card.swift */; };
-		7C96768E2D24EC4800F5A8E7 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768D2D24EC4800F5A8E7 /* ViewModifiers.swift */; };
 		7C9676902D24F5C900F5A8E7 /* CreatePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */; };
 		7C9676922D25102400F5A8E7 /* CreateLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676912D25102400F5A8E7 /* CreateLetterView.swift */; };
 		7C9676942D26450000F5A8E7 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9676932D26450000F5A8E7 /* QRCodeView.swift */; };
@@ -41,6 +41,7 @@
 		7C33144E2D2122A600BEAF41 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		7C3314502D2122D700BEAF41 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		7C3314522D21231300BEAF41 /* BranchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesView.swift; sourceTree = "<group>"; };
+		7C7ADC372D2A2DAD0083520A /* ViewModifiersModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ViewModifiersModule; sourceTree = "<group>"; };
 		7C96767B2D238ACF00F5A8E7 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		7C96767D2D238B5600F5A8E7 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		7C96767F2D238F8B00F5A8E7 /* AccountsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsStorage.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		7C9676872D23A45100F5A8E7 /* DepositView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositView.swift; sourceTree = "<group>"; };
 		7C9676892D23B19200F5A8E7 /* AccountsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsListView.swift; sourceTree = "<group>"; };
 		7C96768B2D23BC2F00F5A8E7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		7C96768D2D24EC4800F5A8E7 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		7C96768F2D24F5C900F5A8E7 /* CreatePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePaymentView.swift; sourceTree = "<group>"; };
 		7C9676912D25102400F5A8E7 /* CreateLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLetterView.swift; sourceTree = "<group>"; };
 		7C9676932D26450000F5A8E7 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
@@ -61,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C7ADC3A2D2A2DC60083520A /* ViewModifiersModule in Frameworks */,
 				7C9676972D264F6B00F5A8E7 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,8 +72,10 @@
 		7C3314322D21206300BEAF41 = {
 			isa = PBXGroup;
 			children = (
+				7C7ADC372D2A2DAD0083520A /* ViewModifiersModule */,
 				7C33143D2D21206300BEAF41 /* SimpleBankApp */,
 				7C33143C2D21206300BEAF41 /* Products */,
+				7C7ADC382D2A2DC60083520A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +108,6 @@
 				7C96768B2D23BC2F00F5A8E7 /* Card.swift */,
 				7C96767F2D238F8B00F5A8E7 /* AccountsStorage.swift */,
 				7C9676852D239DDB00F5A8E7 /* LettersStorage.swift */,
-				7C96768D2D24EC4800F5A8E7 /* ViewModifiers.swift */,
 				7C3314422D21206500BEAF41 /* Assets.xcassets */,
 				7C3314442D21206500BEAF41 /* Preview Content */,
 			);
@@ -118,6 +120,13 @@
 				7C3314452D21206500BEAF41 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C7ADC382D2A2DC60083520A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +147,7 @@
 			name = SimpleBankApp;
 			packageProductDependencies = (
 				7C9676962D264F6B00F5A8E7 /* CodeScanner */,
+				7C7ADC392D2A2DC60083520A /* ViewModifiersModule */,
 			);
 			productName = SimpleBankApp;
 			productReference = 7C33143B2D21206300BEAF41 /* SimpleBankApp.app */;
@@ -210,7 +220,6 @@
 				7C9676802D238F8B00F5A8E7 /* AccountsStorage.swift in Sources */,
 				7C3314512D2122D700BEAF41 /* ContactsView.swift in Sources */,
 				7C9676822D239B2200F5A8E7 /* Letter.swift in Sources */,
-				7C96768E2D24EC4800F5A8E7 /* ViewModifiers.swift in Sources */,
 				7C33144D2D21227D00BEAF41 /* AccountsView.swift in Sources */,
 				7C9676842D239BE200F5A8E7 /* LetterView.swift in Sources */,
 				7C96767C2D238ACF00F5A8E7 /* Account.swift in Sources */,
@@ -430,6 +439,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7C7ADC392D2A2DC60083520A /* ViewModifiersModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ViewModifiersModule;
+		};
 		7C9676962D264F6B00F5A8E7 /* CodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7C9676952D264F6B00F5A8E7 /* XCRemoteSwiftPackageReference "CodeScanner" */;

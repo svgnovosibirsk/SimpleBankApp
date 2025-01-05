@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ViewModifiersModule
 
 struct DepositView: View {
     @State private var showingConfirmationAlert = false
